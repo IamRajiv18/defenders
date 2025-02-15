@@ -1,0 +1,334 @@
+body {
+    background-color: #0d0d0d;
+    color: #ff0000;
+    font-family: 'Roboto', sans-serif;
+ 
+  
+    margin: 0;
+    padding: 0;
+}
+.matrix-bg {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: black;
+    z-index: -1;
+    filter: blur(1.5px) opacity(0.8);
+}
+canvas {
+    display: block;
+}
+.nav{
+    display: flex;
+}
+.logo{
+    width: 50%;
+
+}
+
+.menu{
+    width: 50%;
+  
+    text-align-last: right;
+    margin-right: 50px;
+    align-content: center;
+}
+.menu a{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+   
+}
+.copyright{
+    text-align: center;
+    margin-block-end: 0;
+}
+.header, .footer {
+    background: #402e2e;
+    padding: 15px;
+    border-bottom: 2px solid red;
+    border-top: 2px solid red;
+    font-size: 20px;
+    font-weight: bold;
+}
+.header img, .footer img {
+    height: 50px;
+}
+.banner{
+    text-align: center;
+}
+.banner img {
+    width: 90%;
+    height: auto;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.container {
+    padding: 50px;
+    background: rgba(0, 0, 0, 0.8);
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px red;
+    width: 60%;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+.elmnt476{
+    display: flex;
+}
+.social-icons a {
+    margin: 10px;
+    color: red;
+    font-size: 24px;
+}
+.button {
+    background: red;
+    color: black;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.popup-form, .event-popup {
+
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.9);
+    padding: 20px;
+    border: 2px solid red;
+    backdrop-filter: blur(8px);
+    text-align: center;
+    width: 50%;
+    color: #00ff00;
+    height: 90%;
+    overflow: auto;
+}
+#close{
+  float: right;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+.countdown {
+    font-size: 24px;
+    margin-top: 20px;
+}
+.element376{
+    display: flex;
+}
+.gr834r{
+    width: 40%;
+    place-items: center;
+    align-content: center;
+}
+.gr8346 {
+    width: 60%;
+    
+}
+
+.team-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.team-member {
+    text-align: center;
+    width: 200px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ddd;
+}
+
+.info {
+    margin-top: 15px;
+}
+
+.linkedin-link img {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 5px;
+}
+
+.name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.profession {
+    font-size: 14px;
+    color: #666;
+}
+.linkedin-link{
+    color: blue;
+}
+
+.a753{
+    color: black;text-decoration: none;
+}
+
+/* From Uiverse.io by vinodjangid07 */ 
+.input-wrapper {
+    width: fit-content;
+    height: 45px;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    background-color: #292524;
+  }
+  
+  .icon {
+    width: 30px;
+    fill: rgb(255, 255, 255);
+    margin-left: 8px;
+    transition: all 0.3s;
+  }
+  .input {
+    max-width: 170px;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    background-color: #292524;
+    color: white;
+    font-size: 1em;
+  }
+  .input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+    -webkit-text-fill-color: #ffffff;
+  }
+  .Subscribe-btn {
+    height: 100%;
+    width: 95px;
+    border: none;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: #ffffff;
+    font-weight: 500;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s;
+  }
+  .arrow {
+    /* display: none; */
+    position: absolute;
+    margin-right: 150px;
+    transition: all 0.3s;
+  }
+  .input-wrapper:active .icon {
+    transform: scale(1.3);
+  }
+  .Subscribe-btn:hover {
+    color: white;
+  }
+  .Subscribe-btn:hover .arrow {
+    margin-right: 0;
+    animation: jello-vertical 0.9s both;
+    transform-origin: right;
+  }
+  
+  @keyframes jello-vertical {
+    0% {
+      transform: scale3d(1, 1, 1);
+    }
+    30% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+      transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+      transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+      transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  .Subscribe-btn:active {
+    transform: scale(0.9);
+  }
+  form {
+   
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+label {
+    font-weight: bold;
+    display: flex;
+}
+input {
+    width: 95%;
+    height: 30px;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    color: white;
+  background-color: black;
+    border-radius: 50px;
+    border: 2px solid red;
+}
+select {
+  border: 2px solid red;
+  width: 98%;
+  height: 50px;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+}
+button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+option{
+  color: white;
+  background-color: black;
+}
+textarea{
+  width: 95%;
+  border-radius: 15px;
+  color: white;
+  background-color: black;
+}
+button:hover {
+    background-color: #218838;
+}
+.btn2{
+  width: 95%;
+}
