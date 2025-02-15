@@ -25,7 +25,7 @@ setInterval(drawMatrix, 50);
 function nextEvent() {
     document.querySelector('.popup-overlay').style.display = 'block';
     document.getElementById('event-popup').style.display = 'block';
-    startCountdown("March 23, 2025 10:00:00");
+    startCountdown("February 23, 2025 10:00:00");
 }
 function closePopup() {
     document.querySelector('.popup-overlay').style.display = 'none';
